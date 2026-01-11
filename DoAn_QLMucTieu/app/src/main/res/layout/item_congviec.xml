@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_7"
+    android:orientation="vertical">
+    <!-- Nút hành động -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCapNhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✅Cập nhật"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="❌ Xóa"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+    <!-- Thời gian -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày: "
+            android:textSize="9pt"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/12/2024"
+            android:textStyle="italic"
+            android:textSize="10pt" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp" />
+        <TextView
+            android:id="@+id/tvEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/12/2024"
+            android:textStyle="italic"
+            android:textSize="10pt"  />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvUuTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#A5D6A7"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Thấp"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <!-- Tên tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Tên tiêu đề: "
+            android:textSize="9pt"
+            android:textStyle="italic|bold"
+            android:textColor="#6D4C41" />
+    </LinearLayout>
+    <!-- Mô tả và trạng thái -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvMoTa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mô Tả"
+            android:textSize="10pt"  />
+        <Spinner
+            android:id="@+id/spTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+
+    <!-- Tiến độ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🐾Tình hình🐾: "
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:textColor="#4E342E" />
+    <ProgressBar
+        android:id="@+id/pbTienDo"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="70"
+        android:progressTint="#E02112"
+        android:backgroundTint="#E0E0E0"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

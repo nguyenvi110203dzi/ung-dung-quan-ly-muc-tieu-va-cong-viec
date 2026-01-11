@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "e29066d5-4eda-4c88-9477-ca7640340793",
+		"name": "API_QLMucTieu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26062806",
+		"_collection_link": "https://interstellar-meteor-954369.postman.co/workspace/DemoAPI_DoanhNghiep~110f41c6-f6cc-45aa-9bb0-0330660a9bda/collection/26062806-e29066d5-4eda-4c88-9477-ca7640340793?action=share&source=collection_link&creator=26062806"
+	},
+	"item": [
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/addMucTieu.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "UserID",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "GoalTitle",
+							"value": "Lam dep nek",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "Lam dep cho moi nguoi",
+							"type": "text"
+						},
+						{
+							"key": "TargetDate",
+							"value": "11/12/2024",
+							"type": "text"
+						},
+						{
+							"key": "Visibility",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Progress",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/addMucTieu.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"addMucTieu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/addMucTieuCon.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "DayPlanID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "GoalID",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "19/12/2024",
+							"type": "text"
+						},
+						{
+							"key": "Notes",
+							"value": "Bán 1000 gói mè nào !",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Progress",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/addMucTieuCon.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"addMucTieuCon.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/addCongViec.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "TaskID",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "DayPlanID",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Priority",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Progress",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "StartTime",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "EndTime",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/addCongViec.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"addCongViec.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/capnhatTrangThai.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "MT",
+							"value": "up",
+							"type": "text"
+						},
+						{
+							"key": "GoalID",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "Visibility",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "Progress",
+							"value": "65",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/capnhatTrangThai.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"capnhatTrangThai.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieudangky.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Role",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/dangky.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"dangky.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/dangnhap.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/dangnhap.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"dangnhap.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/deleteMuctieuById.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "GoalID",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/deleteMuctieuById.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"deleteMuctieuById.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/deleteMuctieuConById.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "DayPlanID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/deleteMuctieuConById.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"deleteMuctieuConById.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/getAllMucTieu.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/getAllMucTieu.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"getAllMucTieu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/getAllMucTieuCon.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/getAllMucTieuCon.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"getAllMucTieuCon.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/getAllCongViec.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/getAllCongViec.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"getAllCongViec.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/updateCongViec.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "TaskID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "DayPlanID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Title",
+							"value": "Demo lần cuối",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "Test phát cuối thôi",
+							"type": "text"
+						},
+						{
+							"key": "Priority",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "StartTime",
+							"value": "19/12/2024",
+							"type": "text"
+						},
+						{
+							"key": "EndTime",
+							"value": "21/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "Progress",
+							"value": "80",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/updateCongViec.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"updateCongViec.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.1.177/api/ql_muctieu/updateMucTieu.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.177/api/ql_muctieu/updateMucTieu.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"177"
+					],
+					"path": [
+						"api",
+						"ql_muctieu",
+						"updateMucTieu.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

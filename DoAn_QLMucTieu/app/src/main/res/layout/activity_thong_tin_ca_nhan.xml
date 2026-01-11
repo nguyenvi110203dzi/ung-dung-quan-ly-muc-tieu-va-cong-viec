@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MucTieu">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/brtt"
+    android:layout_above="@id/menubottom">
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎓 THÔNG TIN CÁ NHÂN 🎓"
+        android:textColor="#1C9AFB"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:background="#E3F2FD"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Mã số sinh viên -->
+    <TextView
+        android:id="@+id/tvMSSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚜️DH52106879"
+        android:textColor="#4E342E"
+        android:textSize="18pt"
+        android:gravity="center"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp" />
+
+    <!-- Tên -->
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👩🏻‍🎓Nguyễn Thị Tử Vi"
+        android:textColor="#4E342E"
+        android:textSize="18pt"
+        android:gravity="center"
+        android:layout_below="@id/tvMSSV"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tvSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📞0348958193"
+        android:textColor="#4E342E"
+        android:textSize="18pt"
+        android:gravity="center"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/marquee_text"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:text="🐓🐓🐓🐓🐓"
+        android:textSize="24pt"
+        android:textColor="#2196F3"
+        android:gravity="center"
+        android:layout_marginTop="10pt"
+        android:textStyle="bold|italic"
+        android:fontFamily="serif"
+        android:shadowColor="#2196F3"/>
+</LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menubottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:itemBackground="@color/white"
+        android:background="@color/white"
+        app:itemIconTint="#4CAF50"
+        app:labelVisibilityMode="unlabeled"/>
+</RelativeLayout>

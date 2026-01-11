@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MucTieu"
+    android:background="@drawable/background_image"
+    android:layout_marginTop="5pt">
+
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:text="🧸MỤC TIÊU CHÍNH"
+        android:background="@drawable/bg_1"
+        android:textColor="#F8F8F8"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom"
+        android:padding="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt mục tiêu, hành động mỗi ngày"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="7pt"/>
+
+    <!-- Nút Thêm Mục Tiêu -->
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:text="✨Thêm Mục Tiêu Mới ✨"
+        android:textSize="12pt"
+        android:textColor="#FFFFFF"
+        android:layout_margin="12dp"/>
+
+    <!-- Danh sách Mục Tiêu -->
+    <ListView
+        android:id="@+id/lvMucTieu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnThem"
+        android:layout_above="@id/menubottom"
+        android:divider="#FFAB91"
+        android:dividerHeight="1dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menubottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:itemBackground="@color/white"
+        android:background="@color/white"
+        app:itemIconTint="#4CAF50"
+        app:labelVisibilityMode="unlabeled"/>
+</RelativeLayout>

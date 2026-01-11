@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MucTieu"
+    android:background="@drawable/ic_cute"
+    android:layout_marginTop="5pt">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="👀MỤC TIÊU PHẤN ĐẤU👀"
+        android:background="@drawable/background_image"
+        android:textColor="#000000"
+        android:textSize="12pt"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:padding="16dp" />
+
+    <!-- Button Thêm Kế Hoạch -->
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mục Tiêu Mới📝"
+        android:textSize="10pt"
+        android:layout_below="@id/tvTitle"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <!-- Danh sách mục tiêu -->
+    <ListView
+        android:id="@+id/lvMucTieu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnThem"
+        android:layout_margin="12dp"
+        android:divider="#FFAB91"
+        android:dividerHeight="1dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menubottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:itemBackground="@color/white"
+        android:background="@color/white"
+        app:itemIconTint="#4CAF50"
+        app:labelVisibilityMode="unlabeled"/>
+
+</RelativeLayout>

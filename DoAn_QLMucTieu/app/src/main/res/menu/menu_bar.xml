@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/muctieu"
+        android:icon="@drawable/view"
+        android:title="Mục Tiêu"/>
+    <item
+        android:id="@+id/kehoachngay"
+        android:icon="@drawable/calendar"
+        android:title="Lịch"/>
+    <item
+        android:id="@+id/congviec"
+        android:icon="@drawable/baseline_work_24"
+        android:title="Lịch"/>
+    <item
+        android:id="@+id/canhan"
+        android:icon="@drawable/user"
+        android:title="Cá Nhân"/>
+</menu>

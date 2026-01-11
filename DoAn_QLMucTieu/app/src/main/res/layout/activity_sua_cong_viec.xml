@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuaCongViec"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    android:padding="5pt">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="   🌟 CÔNG VIỆC"
+        android:background="@drawable/bg2"
+        android:textColor="#FFFFFF"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:padding="9dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:paddingHorizontal="16dp">
+
+
+            <!-- Mục tiêu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏹Mục tiêu:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt" />
+
+                <Spinner
+                    android:id="@+id/spMTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Tiêu đề -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📝 Tiêu đề:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt"/>
+
+                <EditText
+                    android:id="@+id/etTieuDe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Mô tả -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📋 Mô tả:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt"/>
+
+                <EditText
+                    android:id="@+id/etMoTa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Độ ưu tiên -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚀Độ ưu tiên:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt"/>
+
+                <Spinner
+                    android:id="@+id/spUuTien"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Ngày bắt đầu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Ngày BĐ:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/etNgayBD"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/ibtnLichBD"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    android:backgroundTint="#E8F5E9"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Ngày kết thúc -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Ngày KT:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/etNgayKT"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/ibtnLichKT"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    android:backgroundTint="#E8F5E9"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Trạng thái -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚨 Trạng thái:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt" />
+
+                <Spinner
+                    android:id="@+id/spTrangThai"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Hoàn thành -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✅ Hoàn thành:"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/etHoanThanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Nút sửa -->
+            <Button
+                android:id="@+id/btnSua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ Sửa công việc ✨"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:textSize="12pt"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

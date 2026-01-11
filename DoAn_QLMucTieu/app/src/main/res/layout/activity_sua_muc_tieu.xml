@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemMucTieu"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    android:padding="5pt">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="🌟MỤC TIÊU"
+        android:textSize="18pt"
+        android:background="@drawable/b3"
+        android:textColor="#4E342E"
+        android:textStyle="bold"
+        android:gravity="bottom" />
+    <!-- Tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌸 Tiêu đề:"
+            android:textStyle="bold"
+            android:textColor="#6D4C41"
+            android:textSize="10pt"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tiêu đề"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+    <!-- Mô tả -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Mô tả:"
+            android:textStyle="bold"
+            android:textColor="#6D4C41"
+            android:textSize="10pt"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mô tả"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <!-- Ngày -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 Ngày:"
+            android:textStyle="bold"
+            android:textColor="#6D4C41"
+            android:textSize="10pt"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etNgay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Chọn ngày"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:id="@+id/ibtnLich"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_calendar_month_24"
+            android:backgroundTint="#A5D6A7"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Hiển thị -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👁️ Hiển thị:"
+            android:textStyle="bold"
+            android:textColor="#6D4C41"
+            android:textSize="10pt"
+            android:layout_marginEnd="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbHienThi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Trạng thái -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚦 Trạng thái:"
+            android:textStyle="bold"
+            android:textColor="#6D4C41"
+            android:textSize="10pt"
+            android:layout_marginEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spTrangThai"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <!-- Nút sửa -->
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✨ Sửa mục tiêu ✨"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:textSize="12pt"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

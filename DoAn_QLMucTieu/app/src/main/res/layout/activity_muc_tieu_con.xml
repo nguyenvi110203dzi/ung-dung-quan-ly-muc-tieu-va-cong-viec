@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MucTieu"
+    android:background="@drawable/background_image">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="🎯MỤC TIÊU NHỎ🎯"
+        android:textColor="#F8F8F8"
+        android:background="@drawable/bg_1"
+        android:textSize="31dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom"
+        android:padding="9dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tích nhỏ thành lớn mỗi ngày"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="7pt"/>
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm kế hoạch ngày mới📝"
+        android:textSize="10pt"
+        android:layout_below="@+id/tvTitle"/>
+    <ListView
+        android:id="@+id/lvMucTieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnThem"
+        android:layout_above="@+id/menubottom"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menubottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:itemBackground="@color/white"
+        android:background="@color/white"
+        app:itemIconTint="#4CAF50"
+        app:labelVisibilityMode="unlabeled"/>
+</RelativeLayout>

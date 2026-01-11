@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemMucTieuCon"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    android:padding="5pt">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="MỤC TIÊU NHỎ"
+        android:textSize="12pt"
+        android:textColor="#4E342E"
+        android:background="@drawable/bg_6"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"  />
+
+    <!-- Mục tiêu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 Mục tiêu: "
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+        <Spinner
+            android:id="@+id/spMucTieu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Ngày -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 Ngày: "
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+        <EditText
+            android:id="@+id/etNgay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:hint="Chọn ngày" />
+        <ImageButton
+            android:id="@+id/ibtnLich"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_calendar_month_24"
+            android:background="#A5D6A7"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Mô tả -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Mô tả: "
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+        <EditText
+            android:id="@+id/etMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:hint="Nhập mô tả" />
+    </LinearLayout>
+
+    <!-- Trạng thái -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚦 Trạng thái: "
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+        <Spinner
+            android:id="@+id/spTrangThai"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Nút thêm -->
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✨ Thêm mục tiêu nhỏ ✨"
+        android:textColor="#FFFFFF"
+        android:textSize="14pt"
+        android:background="@color/design_default_color_background"
+        android:padding="12dp"
+        android:layout_marginTop="220dp" />
+</LinearLayout>
